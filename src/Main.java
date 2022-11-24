@@ -1,8 +1,13 @@
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World");
-        String name="Kasia";
-        int age=18;
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Podaj swoje imię");
+        String name=scanner.nextLine();
+        System.out.println("Podaj swój wiek");
+        int age= scanner.nextInt();
         System.out.println("Czesc mam na imie "+name+" mam " +age+" lat");
     }
 }
